@@ -1,0 +1,108 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<title>Register</title>
+
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url(../../Content/IMAGE/coverpage.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .login-container {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .login-logo {
+        position: relative;
+        margin-left: -41.5%;
+    }
+
+        .login-logo img {
+            position: absolute;
+            width: 20%;
+            margin-top: 19%;
+            background: #282726;
+            border-radius: 4.5rem;
+            padding: 5%;
+        }
+
+    .login-form-1 {
+        padding: 9%;
+        box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+    }
+
+        .login-form-1 h3 {
+            text-align: center;
+            margin-bottom: 12%;
+            color: black;
+        }
+
+    .login-form-2 {
+        padding: 9%;
+        box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+    }
+
+        .login-form-2 h3 {
+            text-align: center;
+            margin-bottom: 12%;
+            color: black;
+        }
+
+    .btnSubmit {
+        font-weight: 600;
+        width: 50%;
+        color: #282726;
+        background-color: #fff;
+        border: none;
+        border-radius: 1.5rem;
+        padding: 2%;
+    }
+
+    .btnForgetPwd {
+        color: black;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+        .btnForgetPwd:hover {
+            text-decoration: none;
+            color: navy;
+        }
+        h3{
+            margin-left:-150px;
+        }
+</style>
+
+<div class="container login-container">
+    <div class="row">
+        <div class="col-md-6 login-form-1">
+            <h3>SIGNUP AS Student</h3>
+
+
+            <div class="form-group">
+                <a href="https://localhost:44321/Home/StudentR"><input type="submit" class="btnSubmit" value="sign up"></a>
+            </div>
+            <div class="form-group">
+                <a onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="btnForgetPwd">Already have an account?</a>
+            </div>
+
+        </div>
+        <div class="col-md-6 login-form-2">
+
+            <h3>SIGNUP AS Instructor</h3>
+
+            <div class="form-group">
+                <a href="https://localhost:44321/Home/InstructorR"><input type="submit" class="btnSubmit" value="Sign up"></a>
+            </div>
+            <div class="form-group">
+
+                <a onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="btnForgetPwd">Already have an account?</a>
+            </div>
+
+        </div>
+    </div>
+</div>
